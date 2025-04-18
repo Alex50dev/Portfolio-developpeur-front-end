@@ -1,9 +1,10 @@
-import '../styles/components/panel-button.scss';
+import { Link } from 'react-router-dom';
+import '../styles/components/_panelbutton.scss';
 
 export default function PanelButton({ label, link }) {
   return (
-    <a href={link} className="panel-button" target={link.endsWith('.pdf') ? "_blank" : "_self"}>
+    <Link to={link} className="panel-button">
       {label}
-    </a>
+    </Link>
   );
 }

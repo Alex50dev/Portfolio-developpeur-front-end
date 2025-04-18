@@ -1,14 +1,16 @@
-import { useState } from 'react';
-import Entrance from './Entrance';
-import Hall from './Hall';
+import { Routes, Route } from 'react-router-dom';
+import PortfolioMuseum from './components/PortfolioMuseum';
+import Projects from './pages/Projects';
+import CV from './pages/CV';
 
-export default function PortfolioMuseum() {
-  const [entered, setEntered] = useState(false);
-
+function App() {
   return (
-    <>
-      {!entered && <Entrance onEnter={() => setEntered(true)} />}
-      {entered && <Hall />}
-    </>
+    <Routes>
+      <Route path="/" element={<PortfolioMuseum />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/cv" element={<CV />} />
+    </Routes>
   );
 }
+
+export default App;
