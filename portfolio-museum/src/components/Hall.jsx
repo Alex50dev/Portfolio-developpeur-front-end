@@ -1,5 +1,5 @@
 import PanelButton from './PanelButton';
-import '../styles/components/hall.scss';
+import '../styles/components/_hall.scss';
 
 export default function Hall() {
     return (

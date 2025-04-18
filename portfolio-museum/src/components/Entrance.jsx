@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import '../styles/components/entrance.scss';
+import '../styles/components/_entrance.scss';
 
 export default function Entrance({ onEnter }) {
   return (

@@ -1,8 +1,6 @@
-@import './abstracts/variables';
-@import './abstracts/mixins';
-@import './base/base';
-@import './components/entrance';
-@import './components/hall';
-@import './components/panel-button';
-@import './pages/cv';
-@import './pages/projects';
+@import './abstracts/_variables';
+@import './components/_entrance';
+@import './components/_hall';
+@import './components/_panelbutton';
+@import './pages/_cv';
+@import './pages/_projects';

@@ -1,19 +1,23 @@
 .entrance {
+    min-height: 100vh;
+    background-image: url('../../../public/entrance-museum.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background-color: #121212;
     color: white;
-    text-align: center;
     padding: 2rem;
+    text-align: center;
   
     &__painting {
+      background-color: rgba(0, 0, 0, 0.7);
       border: 4px solid white;
       padding: 3rem 4rem;
-      background-color: #1e1e1e;
       margin-bottom: 2rem;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
     }
   
     &__title {
@@ -41,3 +45,4 @@
       }
     }
   }
+  
