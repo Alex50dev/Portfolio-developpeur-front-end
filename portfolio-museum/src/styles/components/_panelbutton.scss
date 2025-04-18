@@ -1,0 +1,14 @@
+.panel-button {
+    background-color: #ff5722;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background 0.3s;
+  
+    &:hover {
+      background-color: #e64a19;
+    }
+  }
+  

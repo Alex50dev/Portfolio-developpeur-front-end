@@ -1,7 +1,14 @@
-import PortfolioMuseum from './components/PortfolioMuseum';
+import { useState } from 'react';
+import Entrance from './Entrance';
+import Hall from './Hall';
 
-function App() {
-  return <PortfolioMuseum />;
+export default function PortfolioMuseum() {
+  const [entered, setEntered] = useState(false);
+
+  return (
+    <>
+      {!entered && <Entrance onEnter={() => setEntered(true)} />}
+      {entered && <Hall />}
+    </>
+  );
 }
-
-export default App;
